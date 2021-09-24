@@ -55,25 +55,44 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Conteudo do Modal</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&tilde;</span>
-                </button>
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div class="form-group">
-                  <label for="cardapio-name">Nome</label>
-                  <input type="text" class="form-control" id="cardapio-name" name="name">
-                </div>
-                <div class="form-group">
-                  <label for="cardapio-name">Image</label>
-                  <input type="text" class="form-control" id="cardapio-image" name="Image">
-                </div>
+
+                <h1>Conteúdo do Modal</h1>
+                <form class="food">
+                  <div class="mb-3">
+                    <!--Nome-->
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="cardapio-name" name="name">
+                    <div id="nomeHelp" class="form-text">O nome do Alimento</div>
+                  </div>
+
+                  <!--Descrição-->
+                  <div class="mb-3">
+                    <label for="nome" class="form-label">Descrição</label>
+                    <input type="text" class="form-control" id="cardapio-descricao" name="descricao">
+                  </div>
+
+                  <!--Peço-->
+                  <div class="mb-3">
+                    <label for="nome" class="form-label">Preço</label>
+                    <input type="text" class="form-control" id="cardapio-preco" name="preco">
+                  </div>
+
+                  <!--Imagem-->
+                  <div class="mb-3">
+                    <label for="nome" class="form-label">Imagem</label>
+                    <input type="text" class="form-control" id="cardapio-imagem" name="Imagem">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                  </div>
+                </form>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Confirmar</button>
-              </div>
+
             </div>
           </div>
         </div>
@@ -91,7 +110,8 @@
   <footer></footer>
 
   <!-- Cardápio -->
-  <script src="./js/cardapio.js"></script>
+  <!-- É o caminho do script criado-->
+  <script src="./js/cardapio.js" type="module"></script>
 
   <!-- Bootstrap - Js -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
